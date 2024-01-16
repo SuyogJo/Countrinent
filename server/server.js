@@ -45,16 +45,24 @@ app.get("/hi", (req,res) => {
 
 app.get("/shop", (req,res) => {
     let shop = []
+    let shopC = []
     for (let i = 0; i < 5; i++) {
-        shop.push(data[Math.floor(Math.random() * 244)].country)
+        let rand = Math.floor(Math.random() * 244)
+        shop.push(data[rand].country)
+        shopC.push(data[rand].continent)
     }
-    res.send(shop)
+    const merge = shop.map((element, index) => [element, shopC[index]]);
+    res.send(merge)
 })
 
 app.get("/userHand", (req,res) => {
+    let randContinent = []
     let randCountries = []
     for (let j = 0; j < 3; j++) {
-        randCountries.push(data[Math.floor(Math.random() * 244)].country)
+        let rand = Math.floor(Math.random() * 244)
+        randCountries.push(data[rand].country)
+        randContinent.push(data[rand].continent)
     }
-    res.send(randCountries)
+    const merge = randCountries.map((element, index) => [element, randContinent[index]]);
+    res.send(merge)
 })

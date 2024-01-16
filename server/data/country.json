@@ -280,7 +280,7 @@
         "continent": "Europe"
     },
     {
-        "country": "Fiji Islands",
+        "country": "Fiji",
         "continent": "Oceania"
     },
     {
@@ -600,7 +600,7 @@
         "continent": "Europe"
     },
     {
-        "country": "Netherlands Antilles",
+        "country": "Caribbean Netherlands",
         "continent": "North America"
     },
     {
@@ -720,7 +720,7 @@
         "continent": "Africa"
     },
     {
-        "country": "Saint Helena",
+        "country": "Saint Helena, Ascension and Tristan da Cunha",
         "continent": "Africa"
     },
     {
@@ -944,11 +944,11 @@
         "continent": "Asia"
     },
     {
-        "country": "Virgin Islands, British",
+        "country": "British Virgin Islands",
         "continent": "North America"
     },
     {
-        "country": "Virgin Islands, U.S.",
+        "country": "United States Virgin Islands",
         "continent": "North America"
     },
     {
