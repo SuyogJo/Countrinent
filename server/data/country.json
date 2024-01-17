@@ -236,7 +236,7 @@
         "continent": "North America"
     },
     {
-        "country": "East Timor",
+        "country": "Timor-Leste",
         "continent": "Asia"
     },
     {
@@ -250,10 +250,6 @@
     {
         "country": "El Salvador",
         "continent": "North America"
-    },
-    {
-        "country": "England",
-        "continent": "Europe"
     },
     {
         "country": "Equatorial Guinea",
@@ -372,7 +368,7 @@
         "continent": "Antarctica"
     },
     {
-        "country": "Holy See (Vatican City State)",
+        "country": "Vatican City",
         "continent": "Europe"
     },
     {
@@ -476,7 +472,7 @@
         "continent": "Africa"
     },
     {
-        "country": "Libyan Arab Jamahiriya",
+        "country": "Libya",
         "continent": "Africa"
     },
     {
@@ -548,7 +544,7 @@
         "continent": "North America"
     },
     {
-        "country": "Micronesia, Federated States of",
+        "country": "Micronesia",
         "continent": "Oceania"
     },
     {
@@ -636,10 +632,6 @@
         "continent": "Asia"
     },
     {
-        "country": "Northern Ireland",
-        "continent": "Europe"
-    },
-    {
         "country": "Northern Mariana Islands",
         "continent": "Oceania"
     },
@@ -704,7 +696,7 @@
         "continent": "Asia"
     },
     {
-        "country": "Reunion",
+        "country": "Réunion Island",
         "continent": "Africa"
     },
     {
@@ -754,10 +746,6 @@
     {
         "country": "Saudi Arabia",
         "continent": "Asia"
-    },
-    {
-        "country": "Scotland",
-        "continent": "Europe"
     },
     {
         "country": "Senegal",
@@ -950,10 +938,6 @@
     {
         "country": "United States Virgin Islands",
         "continent": "North America"
-    },
-    {
-        "country": "Wales",
-        "continent": "Europe"
     },
     {
         "country": "Wallis and Futuna",

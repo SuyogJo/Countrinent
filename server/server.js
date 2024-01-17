@@ -47,7 +47,7 @@ app.get("/shop", (req,res) => {
     let shop = []
     let shopC = []
     for (let i = 0; i < 5; i++) {
-        let rand = Math.floor(Math.random() * 244)
+        let rand = Math.floor(Math.random() * 240)
         shop.push(data[rand].country)
         shopC.push(data[rand].continent)
     }
@@ -59,7 +59,7 @@ app.get("/userHand", (req,res) => {
     let randContinent = []
     let randCountries = []
     for (let j = 0; j < 3; j++) {
-        let rand = Math.floor(Math.random() * 244)
+        let rand = Math.floor(Math.random() * 240)
         randCountries.push(data[rand].country)
         randContinent.push(data[rand].continent)
     }

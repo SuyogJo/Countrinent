@@ -3,6 +3,7 @@ import './App.css'
 import axios from 'axios'
 import CardDefault from './components/CardDefault.tsx'
 import CardShop from './components/CardShop.tsx'
+import Navbar from './components/Navbar.tsx'
 
 
 function App() {
@@ -61,24 +62,38 @@ function App() {
 
   return (
     <>
-      <div className="grid grid-cols-5 gap-2 p-10 place-content-center flex">
-        {card}
-      </div>
-      <div className="grid grid-cols-5 gap-2 p-10">
-        {theShop}
-        <div className="p-10 col-span-5 flex justify-center items-center">
-          { leftRolls && 
-          <button type="button" onClick={() => {
-            if (token <= 1) {
-              setLeftRolls(prev => !prev)
-            }
-            setNewShop(x => x+1)
-            setToken(prev => prev-1)
-          }} className="focus:outline-none text-white bg-cyan-300 hover:bg-cyan-800 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">Roll</button>}
-          <button type="button" onClick={onSubmit} className="focus:outline-none text-white bg-cyan-300 hover:bg-cyan-800 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">Submit</button>
+      <Navbar/>
+
+      <div className='flex flex-col '>
+
+        <div className='font-mono grid grid-cols-7 p-5 gap-4'>
+          {card}
         </div>
-        {score}
-        {token}
+
+        <div className='flex justify-center font-mono text-xl font-bold'>
+          <button type="button" onClick={onSubmit} className="font-mono focus:outline-none text-white bg-[#1E7C82] hover:bg-[#1E7C82]-400 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#1E7C82]-600 dark:hover:bg-[#1E7C82]-700 dark:focus:ring-cyan-800">Submit</button>
+        </div>
+
+          <div className='flex flex-row justify-center'>
+
+            <div className="font-mono grid grid-cols-6 gap-4 p-5">
+              {theShop}
+              <div className="flex flex-col justify-center items-center">
+                <div className='font-mono text-xl font-bold'>Score: {score}</div>
+                <div className='font-mono text-xl font-bold'>Token: {token}</div>
+                { leftRolls && 
+                <button type="button" onClick={() => {
+                  if (token <= 1) {
+                    setLeftRolls(prev => !prev)
+                  }
+                  setNewShop(x => x+1)
+                  setToken(prev => prev-1)
+                }} className="font-mono focus:outline-none text-white bg-[#1E7C82] hover:bg-[#1E7C82]-400 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#1E7C82]-600 dark:hover:bg-[#1E7C82]-700 dark:focus:ring-cyan-800">Roll</button>}
+              </div>
+
+            </div>
+          </div>
+
       </div>
     </>
   )
