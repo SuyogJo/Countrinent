@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
 
-const Modal = ({ isOpen, onClose }: {isOpen: boolean, onClose:any}) => {
+const Modal = ({ isOpen, onClose}: {isOpen: boolean, onClose:any}) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,20 +35,21 @@ const Modal = ({ isOpen, onClose }: {isOpen: boolean, onClose:any}) => {
         <div ref={modalRef} className="font-mono bg-[#7086b1] p-8 rounded-md z-10">
           <div>
             <h1 className="text-xl font-bold mb-4">
-              How To Play
+                How To Play
             </h1>
             <ul>
-              <li>&#8226; Start out with 3 countries in your hand</li>
-              <li>&#8226; You have 5 tokens for the journey to refresh and land on new countries</li>
-              <li>&#8226; Pick countries to try to maximize your score based on the conditions listed below</li>
-              <li style={{ marginLeft: '30px', marginTop: '10px' }}>&#8226; Point per unique continent in your hand</li>
-              <li style={{ marginLeft: '30px'}}>&#8226; Point for every country that has a population less than 40,000</li>
-              <li style={{ marginLeft: '30px'}}>&#8226; Point for every country that has a population over 100,000,000</li>
-              <li style={{ marginLeft: '30px'}}>&#8226; Point for the remaining unused tokens</li>
-              <li style={{ marginTop: '10px' }}>&#8226; You can decide at any moment to submit your hand</li>
-              <li >&#8226; You cannot drop any of the countries you decide to select</li>
-              <li >&#8226; You can only have a maximum of 7 countries in your hand</li>
-              <li style={{ marginBottom: '20px' }}>&#8226; Good luck!</li>
+                <li>&#8226; Start out with 3 countries in your hand</li>
+                <li>&#8226; You have 5 tokens for the journey to refresh and land on new countries</li>
+                <li>&#8226; Pick countries to try to maximize your score based on the conditions listed below</li>
+                <li style={{ marginLeft: '30px', marginTop: '10px' }}>&#8226; Point per unique continent in your hand</li>
+                <li style={{ marginLeft: '30px'}}>&#8226; Point for every country that has a population less than 40,000</li>
+                <li style={{ marginLeft: '30px'}}>&#8226; Point for every country that has a population over 100,000,000</li>
+                <li style={{ marginLeft: '30px'}}>&#8226; Point for the remaining unused tokens</li>
+                <li style={{ marginTop: '10px' }}>&#8226; You can decide at any moment to submit your hand</li>
+                <li >&#8226; You cannot drop any of the countries you decide to select</li>
+                <li >&#8226; You can only have a maximum of 7 countries in your hand</li>
+                <li >&#8226; You can click and reveal the continent of any country</li>
+                <li style={{ marginBottom: '20px' }}>&#8226; Good luck!</li>
 
             </ul>
           </div>

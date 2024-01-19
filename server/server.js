@@ -21,28 +21,6 @@ app.listen(PORT, (error) =>{
     } 
 ); 
 
-
-// app.get("/country", async (req, res) => {
-//     try {
-//         const result = await axios.get('https://countriesnow.space/api/v0.1/countries')
-//             .then(r => r.data.data)
-//             .then(d => {
-//                 for (let i=0; i < d.length; i++) {
-//                     places.push(d[i].country)
-//                 }
-//                 return places
-//             })
-//             .then(p => res.send(p))
-//     } catch (err) {
-//         res.send(err.message)
-//     }
-// })
-
-app.get("/hi", (req,res) => {
-    res.send("Hello!!")
-})
-
-
 app.get("/shop", (req,res) => {
     let shop = []
     let shopC = []

@@ -9,7 +9,7 @@ const CardDefault = (props: { name: string, continent: string}) => {
           <div className="font-bold text-xl min-w-22 flex items-center justify-center text-center p-3">{props.name}</div>
 
         {/* Card Footer */}
-        <div className="p-3 flex items-center justify-center text-center p-3">
+        <div className="flex items-center justify-center text-center p-3">
           <button onClick={() => setContiReveal(pre => !pre)} className="transition duration-200 ease-in inline-block bg-gray-200 hover:bg-gray-400 hover:scale-105 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
             {contiReveal? props.continent : <div>Reveal Continent</div>}
           </button>
