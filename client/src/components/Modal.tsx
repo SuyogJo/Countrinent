@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
 
 const Modal = ({ isOpen, onClose}: {isOpen: boolean, onClose:any}) => {
