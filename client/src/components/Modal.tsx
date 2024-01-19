@@ -41,14 +41,14 @@ const Modal = ({ isOpen, onClose }: {isOpen: boolean, onClose:any}) => {
               <li>&#8226; Start out with 3 countries in your hand</li>
               <li>&#8226; You have 5 tokens for the journey to refresh and land on new countries</li>
               <li>&#8226; Pick countries to try to maximize your score based on the conditions listed below</li>
-              <li style={{ marginLeft: '30px', marginTop: '10px' }}>&#8226; Point per unique continent the country belongs to</li>
+              <li style={{ marginLeft: '30px', marginTop: '10px' }}>&#8226; Point per unique continent in your hand</li>
               <li style={{ marginLeft: '30px'}}>&#8226; Point for every country that has a population less than 40,000</li>
               <li style={{ marginLeft: '30px'}}>&#8226; Point for every country that has a population over 100,000,000</li>
-              <li style={{ marginLeft: '30px'}}>&#8226; Point for remaining unused tokens</li>
+              <li style={{ marginLeft: '30px'}}>&#8226; Point for the remaining unused tokens</li>
               <li style={{ marginTop: '10px' }}>&#8226; You can decide at any moment to submit your hand</li>
               <li >&#8226; You cannot drop any of the countries you decide to select</li>
               <li >&#8226; You can only have a maximum of 7 countries in your hand</li>
-              <li style={{ marginBottom: '20px' }}>&#8226; Point for remaining unused tokens</li>
+              <li style={{ marginBottom: '20px' }}>&#8226; Good luck!</li>
 
             </ul>
           </div>
