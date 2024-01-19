@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
 
 const ModalSubmit = ({ isOpen, onClose, pop, conti, tok, finalScore}: {isOpen: boolean, onClose:any, pop:any, conti:any, tok:number, finalScore:number}) => {
