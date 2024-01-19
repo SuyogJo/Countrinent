@@ -26,13 +26,13 @@ function App() {
 
 
   useEffect(() => {
-    axios.get('http://localhost:3000/userHand')
+    axios.get('https://countrinent.onrender.com/userHand')
     //.then(res => res.data)
     .then(d => setUserDeck((d.data)))
   }, []);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/shop')
+    axios.get('https://countrinent.onrender.com/shop')
     .then(d => setShop((d.data)))
   }, [newShop]);
 
